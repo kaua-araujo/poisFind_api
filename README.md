@@ -1,6 +1,5 @@
-##### Autor: [kauã Araújo Santos]
-
-##### Criado em: 28 de maio de 2024
+##### Autor: [kauã Araújo Santos](https://www.linkedin.com/in/kau%C3%A3-ara%C3%BAjo-79b185233/)
+##### Criado em: 12 de Janeiro de 2025
 
 
 # Desafio NexBox - Pontos de Interesse por GPS
