@@ -1,4 +1,4 @@
-## Desafio Yandeh - Pontos de Interesse por GPS
+# Desafio Yandeh - Pontos de Interesse por GPS
 </br>
 Este é um projeto desenvolvido como parte do processo seletivo da NexBox.
 
@@ -6,16 +6,16 @@ Este é um projeto desenvolvido como parte do processo seletivo da NexBox.
 
 ## Como executar o projeto
 
-# Criar banco de dados
+### Instalar dependências
 $ npm install
 
-# Criar banco de dados
+### Rodar o projeto
 $ npm run start
 
-# Criar banco de dados 
+### Criar banco de dados 
 $ npx sequelize-cli db:create
 
-# Migrate no banco de dados
+### Migrate no banco de dados
 $ npx sequelize-cli db:migrate
 
 
