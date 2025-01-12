@@ -5,17 +5,18 @@ Este é um projeto desenvolvido como parte do processo seletivo da NexBox.
 </br>
 
 ## Como executar o projeto
-<!-- criar banco de dados -->
-npm install
 
-<!-- criar banco de dados -->
-npm run start
+# Criar banco de dados
+$ npm install
 
-<!-- criar banco de dados -->
-npx sequelize-cli db:create
+# Criar banco de dados
+$ npm run start
 
-<!-- migrate no banco -->
-npx sequelize-cli db:migrate
+# Criar banco de dados 
+$ npx sequelize-cli db:create
+
+# Migrate no banco de dados
+$ npx sequelize-cli db:migrate
 
 
 
