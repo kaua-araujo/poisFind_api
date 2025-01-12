@@ -3,7 +3,7 @@
 ##### Criado em: 28 de maio de 2024
 
 
-# Desafio Yandeh - Pontos de Interesse por GPS
+# Desafio NexBox - Pontos de Interesse por GPS
 </br>
 Este é um projeto desenvolvido como parte do processo seletivo da NexBox.
 
