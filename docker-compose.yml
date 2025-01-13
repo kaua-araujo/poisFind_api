@@ -1,0 +1,36 @@
+services:
+  mysql:
+    image: mysql:5.7
+    networks:
+      - app-network
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./.mysql:/var/lib/mysql
+   
+  app:
+    build: .
+    networks:
+      - app-network
+    volumes:
+      - ./:/usr/app
+    # command: sh -c "npx sequelize-cli db:create && npx sequelize-cli db:migrate"
+    container_name: app
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+networks:
+    app-network:
+      driver: bridge
+
+    
+      

@@ -1,9 +1,10 @@
 export default {
   development: {
-    username: "root",
-    password: null,
-    database: "coordinate_find",
-    host: "127.0.0.1",
+    username: "user",
+    password: "password",
+    database: "db",
+    host: "mysql",
     dialect: "mysql",
+    port: 3306
   },
 };

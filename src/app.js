@@ -4,10 +4,9 @@ import { errorHandler, notFoundRequest } from './routes/errorHandler.js';
 import cors from 'cors';
 
 //Import database
-import database from './database/index.js';
+import './database/index.js';
 
 const app = express();
-
 
 app.use(express.json());
 app.use(cors());

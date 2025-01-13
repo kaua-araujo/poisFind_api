@@ -8,35 +8,40 @@ Este é um projeto desenvolvido como parte do processo seletivo da NexBox.
 
 </br>
 
-## Como executar o projeto
+## Como executar o projeto com Docker
+
+### Rodar o projeto com docker
+```bash
+$ docker-compose up -d
+```
+
+### Criar banco de dados no docker
+```bash
+$ docker exec -it app npx sequelize-cli db:create
+```
+
+### Migrate no banco de dados no docker
+```bash
+$ docker exec -it app npx sequelize-cli db:migrate
+```
+## Como executar o projeto forma tradicional
 
 ### Instalar dependências
 ```bash
 npm install
 ```
-
-### Rodar o projeto
-```bash
-$ npm run start
-```
-
-### Criar banco de dados 
+### Criar banco de dados
 ```bash
 $ npx sequelize-cli db:create
 ```
-
-### Migrate no banco de dados
+### Migrate no banco de dados no docker
 ```bash
-$ npx sequelize-cli db:migrate
+$ docker exec -it app npx sequelize-cli db:migrate
 ```
-
-
 
 ## Melhorias futuras
 
 - Implementar testes unitários e de integração.
-- Implementar docker.
-
 
 ## Agradecimentos
-Agradeço a oportunidade de participar do processo seletivo da Yandeh. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
+Agradeço a oportunidade de participar do processo seletivo da NextBox. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
