@@ -39,4 +39,4 @@ $ npx sequelize-cli db:migrate
 
 
 ## Agradecimentos
-Agradeço a oportunidade de participar do processo seletivo da Yandeh. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
+Agradeço a oportunidade de participar do processo seletivo da NexBox. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
