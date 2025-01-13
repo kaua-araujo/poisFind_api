@@ -44,4 +44,8 @@ $ docker exec -it app npx sequelize-cli db:migrate
 - Implementar testes unitários e de integração.
 
 ## Agradecimentos
+<<<<<<< HEAD
 Agradeço a oportunidade de participar do processo seletivo da NextBox. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
+=======
+Agradeço a oportunidade de participar do processo seletivo da NexBox. Foi um desafio muito interessante e que me fez pensar em diversas soluções para os problemas propostos.
+>>>>>>> cb46e428a640b76de108ab124cbb13a3b5fdfd72
