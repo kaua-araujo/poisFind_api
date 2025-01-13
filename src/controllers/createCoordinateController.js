@@ -10,7 +10,7 @@ const createCoordinate = async (req, res) => {
     }
 
     if (!title || title.trim() === "") {
-      return res.status(400).json({ error: 'O titulo é obrigatório e não pode ser vazio.' });
+      return res.status(400).json({ error: 'O titulo é obrigatório.' });
     }
 
     if (x === undefined || y === undefined) {
@@ -18,7 +18,10 @@ const createCoordinate = async (req, res) => {
     }
 
     const coordinate = await createCoordinateService(req); 
-    res.json(coordinate);
+    res.status(201).json({
+      message: 'Coordenada criada com sucesso!',
+      coordinate
+    });
 
   } catch (error) {
     res.status(500).json({ error: error.message });

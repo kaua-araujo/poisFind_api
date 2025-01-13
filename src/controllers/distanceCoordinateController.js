@@ -15,7 +15,7 @@ const distanceCoordinate = async (req, res) => {
 
     const coordinates = await indexNextCoordinates(x, y, dMax); 
 
-    res.json(coordinates);
+    res.status(201).json(coordinates);
 
   } catch (error) {
     res.status(500).json({ error: error.message });
