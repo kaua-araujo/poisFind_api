@@ -20,7 +20,7 @@ class Coordinate extends Model {
       },
       {
         sequelize,
-        modelName: 'Coordinate',
+        modelName: 'coordinate',
       }
     );
   }

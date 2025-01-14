@@ -1,8 +1,8 @@
+version: "3"
 services:
   mysql:
     image: mysql:5.7
-    networks:
-      - app-network
+    # command: -innodb-use-native-aio=0
     container_name: mysql
     restart: always
     environment:
@@ -17,20 +17,12 @@ services:
    
   app:
     build: .
-    networks:
-      - app-network
-    volumes:
-      - ./:/usr/app
-    # command: sh -c "npx sequelize-cli db:create && npx sequelize-cli db:migrate"
     container_name: app
     restart: always
     ports:
       - "3000:3000"
     depends_on:
       - mysql
-networks:
-    app-network:
-      driver: bridge
 
     
       
