@@ -3,8 +3,8 @@ export default {
     username: "user",
     password: "password",
     database: "db",
-    host: "mysql",
+    host: "localhost",
     dialect: "mysql",
-    port: 3306
+    port: 3307
   },
 };

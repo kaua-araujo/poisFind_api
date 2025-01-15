@@ -34,10 +34,15 @@ npm install
 ```bash
 $ npx sequelize-cli db:create
 ```
-### Migrate no banco de dados no docker
+### Migrate no banco de dados 
 ```bash
-$ docker exec -it app npx sequelize-cli db:migrate
+$ npx sequelize-cli db:migrate
 ```
+### Rodando o projeto 
+```bash
+$ npm run dev
+```
+
 
 ## Melhorias futuras
 

@@ -1,5 +1,13 @@
 {
     "development": {
+      "username": "user",
+      "password": "password",
+      "database": "db",
+      "host": "localhost",
+      "dialect": "mysql",
+      "port": 3307
+    },
+    "production": {
       "username": "root",
       "password": "root",
       "database": "db",

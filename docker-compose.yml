@@ -15,14 +15,14 @@ services:
     volumes:
       - ./.mysql:/var/lib/mysql
    
-  app:
-    build: .
-    container_name: app
-    restart: always
-    ports:
-      - "3000:3000"
-    depends_on:
-      - mysql
+  # app:
+  #   build: .
+  #   container_name: app
+  #   restart: always
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - mysql
 
     
       
